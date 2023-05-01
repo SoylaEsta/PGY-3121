@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    background-image: url("file:///C:\Users\Ferna\Desktop\Sitio_web_ev01\assets\img\bg_hojas.png");
+}
+.card{
+    width: 20rem;
+}
+.card-img-top{
+    width: 320px;
+    height: 260px;
+}
