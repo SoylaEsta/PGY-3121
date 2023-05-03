@@ -3,13 +3,38 @@ body{
     padding: 0px;
 }
 
-#header{
-    background-image: url("file:///C:\Users\Ferna\Desktop\Sitio_web_ev01\assets\img\bg_hojas.png");
+header{
+    color: white;
+}
+
+#contenidos{
+    margin: 80px auto;
+    padding: 0;
 }
 .card{
-    width: 20rem;
+    padding: auto;
 }
+
 .card-img-top{
     width: 320px;
     height: 260px;
+}
+
+
+.footer{
+    padding: 50px 0 30px 0;
+    background-color: rgb(29, 29, 29);
+}
+
+.footer button{
+    color: white;
+    border: 1px solid white;
+}
+.footer button:hover{
+    border: 1px solid rgba(244, 255, 93, 0.801);
+    color: rgba(244, 255, 93, 0.801);
+}
+
+.footer a{
+    color: aqua;
 }
