@@ -1,0 +1,19 @@
+.imagen-fondo{
+    background-image: url("/assets/Img/hojas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85px;
+
+   
+
+ 
+};
+
+.imagen-fondo-2{
+    background-image: url("/assets/Img/fondo2.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+ 
+};

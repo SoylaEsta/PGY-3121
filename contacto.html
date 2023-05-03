@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/Css/styile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="assets/Img/Logo 1.png" type="icon/x-image">
+    
+    <title>PFS | Contactanos </title>
+</head>
+<body>  <!--Agregar fondo-->
+ 
+  <div class="imagen-fondo" class="opacity-50">
+    <div class="container my-4" >
+      <h3 style="color: white;">Pain Family Studio</h3>
+      <h6 style="color: white;">Body Piercing - Joyería fina</h6>
+    </div>
+  </div>
+
+        <nav class="navbar navbar-expand-lg bg-secondary-subtle">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item ms-4">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
+                  <button class="btn btn-outline-secondary me-4" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+     <!--FORMULARIO CONTACTO --> <!--Me falta verificar form-->
+    <div class="container-fluid" style="background-image: url(assets/Img/fondo2.jpg);">
+     <div class="row">
+        <div class="m-3 col ">
+          <label class="form-label">Nombre</label>  
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="name">
+        </div>
+        <div class=" m-3 col">
+            <label class="form-label">Apellido</label> 
+          <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Last name">
+        </div>
+      </div>
+      <div class="m-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+        <input type="email" class="form-control" id="correo" placeholder="correo@gmail.com">
+      </div>
+      <div class="m-3">
+        <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+        <input type="email" class="form-control" id="asunto" placeholder="Escribe aquí">
+      </div>
+      <div class="m-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+      </div>
+      <div class=" m-3 col-12">
+        <button class="btn btn-primary" id="enviar" type="enviar">Enviar</button>
+      </div>
+    
+
+
+      <!--Footer-->
+      <footer class="container-fluid bg-secondary-subtle text-bg-light p-5 mt-2">
+        <div class="row">
+            <div class="col-md-4 text-center mb-2">
+                <img class="footer-img" src=" xxxx " alt=""> <!--Colocar img en formato SVG-->
+                <p class="d-inline">&copy;2023 - PFS Inc.</p>
+            </div>
+            <div class="col-md-4 mb-2">
+                <h4>Mapa del Sitio</h4> <!--Esto no sé si sera obligarotio en una web-->
+                <hr class="text warning">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-2">
+                <div class="card bg-transparent border-dark">
+                    <div class="card-header">
+                        <h4 class="card-title text-black">Subscríbete a nuestro newsletter!!!</h4> <!--Esto lo borraria o sustituiria-->
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico"
+                                name="email_subscriptor">
+                            <button class="btn btn-outline-black" type="button">Enviar</button>
+                        </div>
+                    </div>
+                    <!--revisar cierres-->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row p-2 text-center">
+            <p>Desde 2003 rompiendo barreras y prejuicios | Equipo Pain Family Studio </p>
+        </div>
+    </div>
+    </footer>
+
+  
+    
+    <!--Link Jquery bootstrap-->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
