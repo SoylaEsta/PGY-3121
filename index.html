@@ -13,15 +13,15 @@
   <header>
     <div class="container-fluid py-4" style="background-image: url('assets/img/bg_hojas.png');">
       <h3>Pain Family Studio</h3>
+      <h6>Body Piercing - Joyería fina</h6>
     </div>
   </header> 
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark text-white">
       <div class="container-fluid">
-        <button class="btn rounded-fill"><i class="bi bi-moon-fill"></i></button>
+        <button id="btn-theme" class="btn rounded-fill"><i id="tema-icon" class="bi bi-moon-fill"></i></button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item ms-lg-2">
@@ -93,7 +93,7 @@
 
     <!-- Contenidos -->
     <div class="container" id="contenidos">
-      <section  class="row mx-auto">
+      <div class="row mx-auto">
         <div class="col-lg-3 col-md-6 my-2 mx-auto">
           <div class="card mx-auto" style="width: 20rem;">
             <img src="http://picsum.photos/640/480" class="card-img-top" alt="...">
@@ -134,7 +134,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
     
 
@@ -151,12 +151,12 @@
             <ul class="list-unstyled quick-info mb-4">
               <li>
                 <a href="#" class="d-flex align-items-center">
-                  <span class="icon mr-3 icon-phone"></span> +1 291 3912 329
+                  <span class="me-2"><i class="bi bi-telephone-fill"></i></span> +1 291 3912 329
                 </a>
               </li>
               <li>
                 <a href="#" class="d-flex align-items-center">
-                  <span class="icon mr-3 icon-envelope"></span> info@gmail.com
+                  <span class="me-2"><i class="bi bi-envelope-fill"></i></span> info@gmail.com
                 </a>
                </li>
             </ul>
@@ -170,36 +170,39 @@
             <hr class="text warning">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link text-black" href="index.html">Inicio</a>
+                <a class="nav-link text-white" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="servicios.html">Servicios</a>
+                <a class="nav-link text-white" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="nosotros.html">Nosotros</a>
+                <a class="nav-link text-white" href="joyeria.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="contacto.html">Contacto</a>
+                <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
           <div class="col-md col-lg-3 pr-md-5 mb-md-0" id="instagram">
             <h3>Instagram</h3>
             <div class="row">
-              <div class="col-lg-5 col-md-4 ">
-                <a href="">
-                  <img src="http://picsum.photos/150/150" alt="" class="img-fluid mb-1">
+              <div class="col-lg-6 col-md-5 pe-0 ">
+                <a href="https://www.instagram.com/p/Crvp4-RgDgX/?utm_source=ig_web_copy_link">
+                  <img src="http://picsum.photos/150/150" alt="" class="img-fluid mb-1 me-lg-1 me-md-1">
                 </a>
                 <a href="">
-                  <img src="http://picsum.photos/150/150" alt="" class="img-fluid">
+                  <img src="http://picsum.photos/150/150" alt="" class="img-fluid  me-md-1">
                 </a>
               </div>
-              <div class="col-lg-5 col-md-4">
+              <div class="col-lg-6 col-md-5 ps-0">
                 <a href="">
-                  <img src="http://picsum.photos/150/150" alt="" class="img-fluid mb-1">
+                  <img src="http://picsum.photos/150/150" alt="" class="img-fluid mb-1 me-lg-1 ms-md-1">
                 </a>
                 <a href="">
-                  <img src="http://picsum.photos/150/150" alt="" class="img-fluid">
+                  <img src="http://picsum.photos/150/150" alt="" class="img-fluid ms-md-1">
                 </a>
               </div>
             </div>
@@ -212,6 +215,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/funciones.js"></script>
   </body>
 </html>
