@@ -3,7 +3,3 @@ function getWeatherMapKey() {
     return appid;
 }
 
-function getMarvelKey() {
-    const key = 'fe6e42d2c291799e1571d5dce4c91eaa';
-    return key;
-}

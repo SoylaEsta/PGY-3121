@@ -2,9 +2,7 @@ $.getScript("assets/js/script_key.js", function() {
     getWeatherMapKey();
 })
 
-$.getScript("assets/js/script_key.js", function() {
-    getMarvelKey();
-})
+
 
 // Modo dark
 
@@ -49,7 +47,7 @@ function clima(){
             const lon = position.coords.longitude;
             let units = 'metric';
             let appid = getWeatherMapKey();
-            let urlClima = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${appid}`
+            let urlClima = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${appid}`;
             $.getJSON(urlClima, function(dataClima) {
                 let icon_url = `https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`;
                 let html_img = `<img id="icon-clima" src="${icon_url}" alt="${dataClima.weather[0].description}"/>`;
@@ -86,4 +84,11 @@ function myMap() {
     }
 }
 
-
+$.getJSON(`https://rickandmortyapi.com/api/character/2`, function(data){
+    let nombre = data.name;
+    let img = data.image;
+    let html_img = `<img src="${img}" class="img-fluid rounded-start" alt="..."></img>`;
+   
+    $('#poke-1').html(html_img);
+    $('#poke-title-1').html(nombre);
+});
