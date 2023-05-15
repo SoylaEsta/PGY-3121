@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
 
+
+
 body{
     margin: 0px;
     padding: 0px;
@@ -16,6 +18,7 @@ body{
     display: inline;
 }
 
+
 #navbarTogglerDemo03 .active{
     color: #bd931f;
 }
@@ -24,34 +27,41 @@ body{
     color: #bd931f;
 }
 
+main{
+    background-image: url("../img/backgrounds/bg-page.jpg");
+}
+
 #widget-fecha{
     border: 0px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    max-width: 20rem;
 }
 
 #icon-clima{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: -15px;
-    left: 35px;
+    width: 60px;
+    height: 60px;
 }
 
 #temperatura{
     font: normal 600 25px 'Avenir Next LT Pro', sans-serif;
-    margin-bottom: 0px;
-    position: absolute;
-    top: 50px;
+    display: inline-block;
 }
 
-#widget-fecha .card-title{
-    font: normal 600 32px 'Avenir Next LT Pro', sans-serif;
-}
-
-#widget-fecha .card-text{
+#descripcion-clima{
     font-size: 13px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+#card-title{
+    font: normal 600 25px 'Avenir Next LT Pro', sans-serif;
+    display: inline-block;
+}
+
+#card-text{
+    font-size: 13px;
+    margin-top: 0px;
+    display: inline-block;
 }
 
 #bg-img-page{
@@ -78,10 +88,16 @@ body{
 
 
 
-.img-gallery{
+.img-hover{
     width: 400px;
     height: 400px;
 }
+
+/* .img-gallery:HOVER{
+    transition: 1s;
+    transform: scale(0.8);
+} */
+
 
 .footer{
     padding: 50px 0 30px 0;
@@ -107,4 +123,15 @@ body{
 
 #footer-nav .nav-link:hover{
     color: #d4b341;
+}
+
+[data-bs-theme="dark"] {
+    background-color: rgb(19, 19, 19);
+    
+  
+
+    .main{
+        background-image: url("../img/backgrounds/bg-main-dark.svg");
+        background-repeat: repeat y;
+    }
 }
