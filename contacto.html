@@ -94,107 +94,97 @@
     </div>
   </section>
 
-  <div class="container">
-    <h1>Contactanos</h1>
-</div>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="txtNombre">Nombre</label>
-                    <input onblur="validacionFormulario()" type="text" class="form-control" id="txtNombre" placeholder="Ingrese nombre">
-                    <small id="valNombre">Debe ingresar su nombre</small>
-                </div>
-            </div> 
-
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="txtApellido">Apellido</label>
-                    <input onblur="validacionFormulario()" type="text" class="form-control" id="txtApellido" placeholder="Ingrese su apellido">    
-                    <small id="valApellido">Debe ingresar su apellido</small>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="txtRut">Rut</label>
-                    <input onblur="validacionFormulario()" type="text" class="form-control" id="txtRut" placeholder="Ingrese su rut">
-                    <small id="valRut">Debe ingresar su rut</small>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="txtFecha" class="form-label">Fecha de nacimiento:</label>
-                  <input type="date" class="form-control" id="txtFecha" name="fecha"> <!--revisar name-->
-                </div>
-              </div>
-            
-            <div class="col-md-12">
-                <div class="mb-3">
-                    <label for="txtDireccion">Direccion</label>
-                    <input onblur="validacionFormulario()" type="text" class="form-control" id="txtDireccion" placeholder="">
-                    <small id="valDireccion">Debe ingresar su direccion</small>
-                </div>
-            </div>
-
-
-            <div class="col-md-6"> 
-                <label for="cmbComuna">Comuna</label>
-                <select onblur="validacionFormulario()" class="form-select" id="cmbComuna" aria-label="Default select example">
-                    <option selected disabled value="null">Seleccione</option>
-                    <option value="1">Santiago</option>
-                    <option value="2">Providencia</option>
-                    <option value="3">Ñuñoa</option>
-                    <option value="4">Recoleta</option>
-                    <option value="5">Estación central</option>
-                    <option value="6">Recoleta</option>
+  <section class="container">
+    <h1>Contáctanos</h1>
+    <div class="row row-cols-2 my-4">
+      <div class="col col-lg-5 mb-3 mx-auto">
+        <label for="txtNombre">Nombre</label>
+        <input onblur="validacionFormulario()" type="text" class="form-control" id="txtNombre" placeholder="Ingrese nombre">
+        <small id="valNombre">Debe ingresar su nombre</small>
+      </div> 
+      <div class="col col-lg-5 mb-3 mx-auto">
           
-                  </select>
-                  <small id="valComuna">Debe seleccionar una comuna</small>
-              </div>
+        <label for="txtApellido">Apellido</label>
+        <input onblur="validacionFormulario()" type="text" class="form-control" id="txtApellido" placeholder="Ingrese su apellido">    
+        <small id="valApellido">Debe ingresar su apellido</small>
+      </div>
+    </div>
+    <div class="row row-cols-2 my-4">
+      <div class="col col-lg-5 mb-3 mx-auto">
+        <label for="txtRut">Rut</label>
+        <input onblur="validacionFormulario()" type="text" class="form-control" id="txtRut" placeholder="Ingrese su rut">
+        <small id="valRut">Debe ingresar su rut</small>
+      </div>
+      <div class="col col-lg-5 mb-3 mx-auto">
+        <label for="txtFecha" class="form-label mb-0">Fecha de nacimiento:</label>
+        <input type="date" class="form-control" id="txtFecha" name="fecha"> <!--revisar name-->
+      </div>
+    </div>
+    <div class="row row-cols-2 my-4">
+      <div class="col col-lg-5 mb-3 mx-auto">
+        <label for="txtDireccion">Direccion</label>
+        <input onblur="validacionFormulario()" type="text" class="form-control" id="txtDireccion" placeholder="">
+        <small id="valDireccion">Debe ingresar su direccion</small>
+      </div>
+      <div class="col col-lg-5 mb-3 mx-auto"> 
+        <label for="cmbComuna">Comuna</label>
+        <select onblur="validacionFormulario()" class="form-select" id="cmbComuna" aria-label="Default select example">
+          <option selected disabled value="null">Seleccione</option>
+          <option value="1">Santiago</option>
+          <option value="2">Providencia</option>
+          <option value="3">Ñuñoa</option>
+          <option value="4">Recoleta</option>
+          <option value="5">Estación central</option>
+          <option value="6">Recoleta</option>
+        </select>
+        <small id="valComuna">Debe seleccionar una comuna</small>
+      </div>
+    </div>
+    <div class="row row-cols-2 my-4">
+      <div class="col col-lg-5 mb-3 mx-auto">
+        <label for="txtCorreo">Correo</label>
+        <input onblur="validacionFormulario()" type="email" class="form-control" id="txtCorreo" placeholder="Ingrese su correo">
+        <small id="valCorreo">Debe ingresar su correo</small>
+      </div>
+      <div class="col col-lg-5 mb-3 mx-auto">
+        <label for="txtContrasena">Contraseña</label>
+        <div class="input-group mb-3">
+          <input onblur="validacionFormulario()" id="txtContrasena" type="password" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button onclick="password()" class="btn btn-outline-secondary" type="button" id="button-addon2">
+            <svg id="mostrar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+              <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+            </svg>
+            <svg id="ocultar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+              <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+              <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+            </svg>
+          </button>
+          <small id="valContrasena">Debe ingresar una contraseña</small>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 ">
+      <div class="col col-lg-11 mx-auto mb-4">
+        <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+        <input type="email" class="form-control" id="asunto" placeholder="Escribe aquí">
+      </div>
 
+      <div class="col col-lg-11 mx-auto my-4">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+        <textarea ma class="form-control" id="valComentario" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+        <p id="charNum"></p>
+      </div>
+    </div>
 
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="txtCorreo">Correo</label>
-                    <input onblur="validacionFormulario()" type="email" class="form-control" id="txtCorreo" placeholder="Ingrese su correo">
-                    <small id="valCorreo">Debe ingresar su correo</small>
-                </div>
-            </div>
+      
 
-           
-            <div class="col-md-3">
-                <div class="input-group mb-3">
-                    <input onblur="validacionFormulario()" id="txtContrasena" type="password" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button onclick="password()" class="btn btn-outline-secondary" type="button" id="button-addon2">
-                        <svg id="mostrar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                          </svg>
-                        <svg id="ocultar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
-                            <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
-                            <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
-                          </svg>
-                    </button>
-                  </div>
-                  <small id="valContrasena">Debe ingresar una contraseña</small>
-                </div>
+      
 
-            <div class="md-2">
-                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-                <input type="email" class="form-control" id="asunto" placeholder="Escribe aquí">
-            </div>
-
-            <div class="md-m-2">
-                <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                <textarea class="form-control" id="valComentario" onblur="limitarCaracteres()" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
-            </div>
-
-            <div class=" m-3 col-12">
-                <button type="button" class="btn btn-primary mt-4" onclick="validacionFormulario()">Enviar</button>
-            </div>
+      <div class=" m-3 col-12">
+          <button type="button" class="btn btn-primary mt-4" onclick="validacionFormulario()">Enviar</button>
+      </div>
+  </section>
 </main>
 
 
@@ -269,5 +259,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="assets/js/funciones.js"></script>
+<script src="assets/js/form.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt3ixABltNzmL_-1YiKKy2uKEksuLwnGI&callback=myMap"></script></body>
 </html>
