@@ -7,6 +7,7 @@ document.getElementById("valRut").style.display = "none";
 document.getElementById("valComuna").style.display = "none";
 document.getElementById("valContrasena").style.display = "none";
 
+
 $(".form-control").on("blur", function(){
   validacionFormulario();
 });

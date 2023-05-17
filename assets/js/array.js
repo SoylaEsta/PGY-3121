@@ -1,8 +1,10 @@
-$.getScript("assets/js/script_key.js", function() {
-    validacionFormulario();
-})
+
 
 $("#btn-submit").on("click", function(){
+    $.getScript("assets/js/script_key.js", function() {
+        validacionFormulario();
+    })
+
     const users = [];
     if (validacionFormulario()){
         let nombre_user = $("#txtNombre").val();
