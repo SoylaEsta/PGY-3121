@@ -13,20 +13,18 @@
 
     <title>Inicio | Pain Family Studio</title>
 </head>
-<body data-bs-theme="light" onload="mostrarFechaActual(), clima()" >
-  <header>
-    <section class="container-fluid py-4" id="header">
-      <!-- Header -->
-      <div class="row"> 
-        <div class="col-6">
-          <!-- Brand -->
+<body data-bs-theme="light" id="body" >
+  <header> 
+    <div class="container-fluid py-4" id="header">
+      <div class="row"> <!-- Header -->
+        <div class="col-6"> <!-- Brand -->
           <div class="row">
             <div class="col-2 col-lg-1">
-              <a class="navbar-brand " href="#">
-                <img id="nav-logo" src="assets/img/logo.png" alt="Logo" width="45" height="45">
+              <a class="navbar-brand " href="index.html">
+                <img id="nav-logo" src="assets/img/logo.png" alt="logo">
               </a>
             </div>
-            <div class="col-9">
+            <div class="col-9"> <!-- Encabezados -->
               <div class="row row-cols-1" id="header-title">
                 <div class="col mb-1">
                   <h3>Pain Family Studio</h3>
@@ -37,18 +35,11 @@
               </div>
             </div>
           </div>
-          
-          <!-- Encabezados -->
-          
         </div>
-          
-        <div class="col-5 col-lg-3 m-auto me-1">
-         <!-- Widget clima y fecha -->
-
+        <div class="col-5 col-lg-3 m-auto me-1"> <!-- Widget clima y fecha -->
           <div class="card mw-50 w-auto" id="widget-fecha">
             <div class="row">
-              <!-- Clima -->
-              <div class="col-6">
+              <div class="col-6"> <!-- Clima -->
                 <div class="row">
                   <div id="img-clima" class="col-4 my-auto"></div>
                   <div class="col-8 pe-0">
@@ -67,15 +58,13 @@
                 </div>
               </div>
             </div>
-          </div>
-            
+          </div>  
         </div>
       </div>
-    </section>
-
+    </div>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark text-white">
-      <div class="container-fluid"> <!-- Section o div? -->
+      <div class="container-fluid"> 
         <button id="btn-theme" class="btn rounded-fill"><i id="tema-icon" class="bi bi-moon-fill"></i></button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -108,39 +97,37 @@
   </header> 
   
 
-  <main class="main mb-4">
-
-    <!-- Carrousel -->
-    <section class="container-fluid px-0">
+  <main class="main pb-4">
+    <section class="container-fluid px-0"> <!-- Carrousel -->
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="http://picsum.photos/1200/400" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+            <img src="assets/img/backgrounds/bg-carrousel_3.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="http://picsum.photos/1200/400" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
+            <img src="assets/img/backgrounds/bg-carrousel_2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="http://picsum.photos/1200/400" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+            <img src="assets/img/backgrounds/bg-carrousel_1.jpg" class="d-block w-100" alt="...">
           </div>
-        </div>
+          <div class="carousel-item">
+            <img src="assets/img/backgrounds/bg-carrousel_4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/backgrounds/bg-carrousel_5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/backgrounds/bg-carrousel_6.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div> 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -152,8 +139,7 @@
       </div>
     </section>
 
-    <!-- Contenidos -->
-    <section class="container" id="contenidos">
+    <section class="container" id="contenidos"> <!-- Contenidos -->
       <div class="row">
         <div class="col-lg-3 col-md my-2 mx-auto">
           <div class="card mx-auto">
@@ -161,7 +147,7 @@
             <div class="card-body">
               <h5 class="card-title">Catálogo</h5>
               <p class="card-text">Conoce en detalle los materiales y marcas con los que trabajamos.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+              <a href="joyeria.html" class="btn btn-primary">Ver</a>
             </div>
           </div>
         </div>
@@ -171,7 +157,7 @@
             <div class="card-body">
               <h5 class="card-title">Perforaciones</h5>
               <p class="card-text">Conoce las diferentes perforaciones que realizamos.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+              <a href="servicios.html" class="btn btn-primary">Ver</a>
             </div>
           </div>
         </div>
@@ -179,9 +165,9 @@
           <div class="card mx-auto">
             <img src="assets/img/backgrounds/servicio.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Estudio</h5>
-              <p class="card-text">Conoce nuestro espacio de trabajo y sus instalaciones.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+              <h5 class="card-title">Contacto</h5>
+              <p class="card-text">Ponte en contacto con nuestro equipo para aclarar tus dudas</p>
+              <a href="contacto.html" class="btn btn-primary">Ver</a>
             </div>
           </div>
         </div>
@@ -191,14 +177,14 @@
             <div class="card-body">
               <h5 class="card-title">Equipo</h5>
               <p class="card-text">Conoce nuestro equipo de trabajo y sus funciones.</p>
-              <a href="#" class="btn btn-primary">Ver</a>
+              <a href="nosotros.html" class="btn btn-primary">Ver</a>
             </div>
           </div>
         </div>
       </div>
     </section>
     
-    <section class="container">
+    <section class="container" id="reels">
       <div class="row">
         <div class="col-md-8 col-lg-4 mx-auto">
           <video src="assets/video/reel.mp4" class="ratio ratio-9X16 py-2" controls autoplay muted loop ></video>
@@ -213,89 +199,92 @@
     </section>
     
     <section>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card mb-3 mx-auto" style="max-width: 540px;">
-              <div class="row g-0">
-                <div id="img-1" class="col-md-4"></div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 id="card-title-1" class="card-title"></h5>
-                    <p id="card-text-1" class="card-text"></p>
+      <div class="container-fluid text-center mt-4">
+        <h3 class="">Recomendación de Rick and Morty</h3>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div id="img-1" class="col-md-4"></div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 id="card-title-1" class="card-title"></h5>
+                      <p id="card-text-1" class="card-text"></p>
+                    </div>
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card mb-3 mx-auto" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="http://picsum.photos/200/300" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div id="img-2" class="col-md-4"></div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 id="card-title-2" class="card-title"></h5>
+                      <p id="card-text-2" class="card-text"></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title-2">Card title</h5>
-                    <p id="card-text-2" class="card-text"></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div id="img-3" class="col-md-4"></div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 id="card-title-3" class="card-title"></h5>
+                      <p id="card-text-3" class="card-text"></p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card mb-3 mx-auto" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="http://picsum.photos/200/300" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title-3">Card title</h5>
-                    <p id="card-text-3" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel-api-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel-api-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      
     </section>
 
   </main>
     
 
 
+
+ 
   <footer class="footer text-light">
     <div class="container" id="container-footer">
       <div class="row">
-        <div class="col-md pr-md-5 mb-4 mb-md-0">
+        <div class="col-4 px-2 mb-4 mb-md-0 mx-auto">
           <div id="googleMap" style="width:100%;height:60%;"></div>
-          <ul class="list-unstyled quick-info mb-4">
+          <ul class="list-unstyled quick-info my-4">
             <li>
               <a href="#" class="d-flex align-items-center">
-                <span class="me-2"><i class="bi bi-telephone-fill"></i></span> +1 291 3912 329
+                <span class="me-2"><i class="bi bi-whatsapp"></i></span> +56 9 6991 7034
               </a>
             </li>
             <li>
               <a href="#" class="d-flex align-items-center">
-                <span class="me-2"><i class="bi bi-envelope-fill"></i></span> info@gmail.com
+                <span class="me-2"><i class="bi bi-geo-alt-fill"></i></span> Padre Mariano 82, of. 1202, Providencia.
               </a>
               </li>
           </ul>
-          <div class="input-group">
+          <!-- <div class="input-group">
             <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico" name="email_subscriptor">
             <button class="btn btn-outline-black" type="button">Enviar</button>
-          </div>
+          </div> -->
         </div>
-        <div class="col-md pr-md-5 mb-4 mb-md-0" id="footer-nav">
+        <div class="col-4 px-2 mb-4 mb-md-0 mx-auto" id="footer-nav">
           <h4>Mapa del Sitio</h4> <!--Esto no sé si sera obligarotio en una web-->
           <hr class="text warning">
           <ul class="nav flex-column">
@@ -316,23 +305,23 @@
             </li>
           </ul>
         </div>
-        <div class="col-md col-lg-3 pr-md-5 mb-md-0" id="instagram">
+        <div class="col-md col-lg-3 px-2 mb-md-0 mx-auto" id="instagram">
           <h3>Instagram</h3>
           <div class="row">
             <div class="col-lg-6 col-md-5 pe-0 ">
-              <a href="https://www.instagram.com/p/Crvp4-RgDgX/?utm_source=ig_web_copy_link">
-                <img src="http://picsum.photos/150/150" alt="" class="img-fluid mb-1 me-lg-1 me-md-1">
+              <a href="https://www.instagram.com/p/CsJfkJKu-Av/?utm_source=ig_embed&amp;utm_campaign=loading">
+                <img src="assets/img/footer/ig-img_1.jpg" alt="" class="img-footer img-fluid mb-1 me-lg-1 me-md-1">
               </a>
-              <a href="">
-                <img src="http://picsum.photos/150/150" alt="" class="img-fluid  me-md-1">
+              <a href="https://www.instagram.com/p/CpPhQUZObXf/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                <img src="assets/img/footer/ig-img_2.jpg" alt="" class="img-footer img-fluid  me-md-1">
               </a>
             </div>
             <div class="col-lg-6 col-md-5 ps-0">
-              <a href="">
-                <img src="http://picsum.photos/150/150" alt="" class="img-fluid mb-1 me-lg-1 ms-md-1">
+              <a href="https://www.instagram.com/p/CsRDwXyufTn/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                <img src="assets/img/footer/ig-img_3.jpg" alt="" class="img-fluid mb-1 me-lg-1 ms-md-1">
               </a>
-              <a href="">
-                <img src="http://picsum.photos/150/150" alt="" class="img-fluid ms-md-1">
+              <a href="https://www.instagram.com/p/Cfgw6qpOjFb/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                <img src="assets/img/footer/ig-img_4.jpg" alt="" class="img-fluid ms-md-1">
               </a>
             </div>
           </div>

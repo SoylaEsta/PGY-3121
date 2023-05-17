@@ -2,8 +2,13 @@ $.getScript("assets/js/script_key.js", function() {
     getWeatherMapKey();
 })
 
+$(document).ready(function(){
+    clima();
+    mostrarFechaActual();
+    apiRick();  
+});
 
-
+$(".carousel-api-icon").attr("data-bs-theme", "dark");
 // Modo dark
 
 const darkMode = () => {
@@ -91,24 +96,31 @@ function myMap() {
     }
 }
 
-$.getJSON(`https://rickandmortyapi.com/api/character/2`, function(data){
-    let nombre = data.name;
-    let img = data.image;
-    let html_img = `<img src="${img}" class="img-fluid rounded-start" alt="..."></img>`;
-    let url_episode = data.episode[1];
-    let descripcion =
-    `
-    <p id="card-text-1" class="card-text">Status: ${data.status}</p>
-    <p id="card-text-1" class="card-text">Species: ${data.species}</p>
-    <p id="card-text-1" class="card-text">Gender: ${data.gender}</p>
-    <p id="card-text-1" class="card-text">Origin: ${data.location.name}</p>
-    `;
-    $.getJSON(url_episode, function(episode){
-        let eps_name = episode.name;
-        console.log(eps_name);
-    });
-    
-    $('#img-1').html(html_img);
-    $('#card-title-1').html(nombre);
-    $('#card-text-1').html(descripcion);
-});
+function apiRick(){
+    for (let index = 0; index < 3; index++) {
+        $.getJSON(`https://rickandmortyapi.com/api/character/${index+1}`, function(data){
+        let nombre = data.name;
+        let img = data.image;
+        let html_img = `<img id="img-api" src="${img}" class="img-fluid rounded-start" alt="..."></img>`;
+        let url_episode = data.episode[1];
+        let descripcion =
+        `
+        <p class="card-text">Status: ${data.status}</p>
+        <p class="card-text">Species: ${data.species}</p>
+        <p class="card-text">Gender: ${data.gender}</p>
+        <p class="card-text">Origin: ${data.location.name}</p>
+        `;
+        $.getJSON(url_episode, function(episode){
+            let eps_name = episode.name;
+            console.log(eps_name);
+        });
+        
+        $(`#img-${index+1}`).html(html_img);
+        $(`#card-title-${index+1}`).html(nombre);
+        $(`#card-text-${index+1}`).html(descripcion);
+        });
+    }
+}
+
+
+

@@ -14,6 +14,11 @@ body{
     color: white;
 }
 
+#nav-logo{
+    width: 45px;
+    height: 45px;
+}
+
 #header-title h3, h6{
     display: inline;
 }
@@ -86,6 +91,10 @@ main{
     font-size: 14px;
 }
 
+#img-api{
+ width: 208px;
+ height: 208px;
+}
 
 
 .img-hover{
@@ -100,7 +109,7 @@ main{
 
 
 .footer{
-    padding: 50px 0 30px 0;
+    padding: 30px 0 30px 0;
     background-color: rgb(29, 29, 29);
 }
 
